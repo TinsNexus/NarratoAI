@@ -14,7 +14,7 @@ on:
         default: 'latest'
 
 env:
-  DOCKER_IMAGE: tinnt-truman/narratoai
+  DOCKER_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/narratoai
 
 jobs:
   build-and-push:
